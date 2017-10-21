@@ -57,3 +57,5 @@
 "GenericOK" = "OK";
 "GenericNo" = "No";
 "NoWithGratitude" = "No thanks";
+"NewFeaturesPromptTitle" = "Checkout these new features!";
+"NewFeaturesSubtitle" = "1. Feature #1\n2. Feature #2";

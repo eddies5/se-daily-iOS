@@ -31,6 +31,7 @@ target 'SEDaily-IOS' do
   pod 'Skeleton'
   pod 'WaitForIt'
   pod 'PopupDialog'
+  pod 'Bumper'
 
   target 'SEDaily-IOSTests' do
     inherit! :search_paths

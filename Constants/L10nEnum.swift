@@ -74,6 +74,10 @@ enum L10n {
   static let loginTitle = L10n.tr("Localizable", "LoginTitle")
   /// Logout
   static let logoutTitle = L10n.tr("Localizable", "LogoutTitle")
+  /// Checkout these new features!
+  static let newFeaturesPromptTitle = L10n.tr("Localizable", "NewFeaturesPromptTitle")
+  /// 1. Feature #1\n2. Feature #2
+  static let newFeaturesSubtitle = L10n.tr("Localizable", "NewFeaturesSubtitle")
   /// No thanks
   static let noWithGratitude = L10n.tr("Localizable", "NoWithGratitude")
   /// Password

@@ -22,6 +22,7 @@ import SwiftIcons
 import PopupDialog
 import StoreKit
 import MessageUI
+import Bumper
 
 class CustomTabViewController: UITabBarController, UITabBarControllerDelegate {
     
@@ -44,6 +45,17 @@ class CustomTabViewController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         setupNavBar()
+
+        Bumper.tryToExecute {
+            let popup = PopupDialog(title: L10n.newFeaturesPromptTitle,
+                                    message: L10n.newFeaturesSubtitle)
+            let okay = DefaultButton(title: L10n.genericOkay) {
+            }
+
+            popup.addButton(okay)
+
+            self.present(popup, animated: true) {}
+        }
         
         AskForReview.tryToExecute { didExecute in
             if didExecute {
